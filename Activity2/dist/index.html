@@ -2,13 +2,19 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
-      <!-- <script src="../dist/vue.js"></script> --> 
+      <script src="../dist/vue.js"></script>
     </head>
     <body>
         
         <div id="app">
             {{ message }}
         </div>
+        <div id ="app2"> 
+        <p>{{message}} </p>
+        <input v-model="message">
+        <button v-on:click="reverseMessage" > Message  Retourné </button>
+        <p> Vous avez cliqué {{counter}} fois sur Message Retourné, 2 suffisent ! </p> 
+         </div>
         
         <script src="main.js"></script>
     </body>
