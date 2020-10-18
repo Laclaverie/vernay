@@ -5,7 +5,7 @@
       <script src="../dist/vue.js"></script>
     </head>
     <body>
-        
+<h1> Activité 1_2 et 2_2</h1>
         <div id="app">
             {{ message }}
         </div>
@@ -13,9 +13,41 @@
         <p>{{message}} </p>
         <input v-model="message">
         <button v-on:click="reverseMessage" > Message  Retourné </button>
+        <button v-on:click= "counter=0"> Remettre compteur à 0</button>
         <p> Vous avez cliqué {{counter}} fois sur Message Retourné, 2 suffisent ! </p> 
          </div>
-        
-        <script src="main.js"></script>
-    </body>
+
+<h1> Activité 2_1 </h1> 
+
+<div id="app-7">
+  <ol>
+    <todo-item
+      v-for="item in groceryList"
+      v-bind:todo="item"
+      v-bind:key="item.id"
+    ></todo-item>
+  </ol>
+</div>
+<div id = "tcheck">
+<input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+<label for="jack">Jack</label>
+<input type="checkbox" id="john" value="John" v-model="checkedNames">
+<label for="john">John</label>
+<input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+<label for="mike">Mike</label>
+<br>
+<span>Noms cochés : {{ checkedNames }}</span>
+</div>
+<div id= "formulaire">
+<br>
+
+<todo-item 
+v-for="item in nameList"
+v-bind:todo="item"
+v-bind:key="item.id"> 
+
+</div>
+
+      <script src="main.js"></script>
+</body>
 </html>
