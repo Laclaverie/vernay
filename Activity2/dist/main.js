@@ -40,14 +40,3 @@ var app = new Vue({
       checkedNames: []
     }
   })
-  
-  var formulaire = new Vue({
-      el:'#formulaire',
-      data:{
-nameList:[
-      {id :0,text:'Jean-Michel'},
-      {id:1, text :' Toto'},
-      {id:2, text:'Christ Cosmique'}
-    ]
-      }
-  })

@@ -20,6 +20,7 @@
 <h1> Activité 2_1 </h1> 
 
 <div id="app-7">
+<h3> Affichage d'une liste avec vue js</h3>
   <ol>
     <todo-item
       v-for="item in groceryList"
@@ -29,6 +30,7 @@
   </ol>
 </div>
 <div id = "tcheck">
+<h3> Checkbox</h3>
 <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
 <label for="jack">Jack</label>
 <input type="checkbox" id="john" value="John" v-model="checkedNames">
@@ -39,12 +41,9 @@
 <span>Noms cochés : {{ checkedNames }}</span>
 </div>
 <div id= "formulaire">
+
 <br>
 
-<todo-item 
-v-for="item in nameList"
-v-bind:todo="item"
-v-bind:key="item.id"> 
 
 </div>
 

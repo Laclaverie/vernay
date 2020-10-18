@@ -1,4 +1,66 @@
-html, body {
-    margin: 5px;
+html, body, div {
+    margin: 2%;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+font-family: 'Source Sans Pro';
+}
+
+
+body {
+font-family: 'Source Sans Pro';
+font-weight: 300;
+color: #5d5d5d;
+padding : 2em;
+background-image:url(images/tse.png) ;
+background-position: bottom;
+background-repeat: no-repeat;
+}
+
+h1{
+color: #252122;
+font-weight: 300;
+font-size: 1.7em;
+letter-spacing: -0.035em;
+margin: 0 0 .5em 0;
+}
+
+#app-7{
+    color: #252122;
+    font-weight: 300;
+    text-align: left;
+}
+
+p {
+color: #24445C;
+font-weight: 300;
+font-size: 1.3em;
+letter-spacing: -0.035em;
+margin: 0 0 .5em 0;
+}
+
+
+button {
+background-color: rgba(72, 201, 176, 0.8);
+border: none;
+color: white;
+border-radius: 4px;
+padding: .5em .5em;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 12px;
+margin : 0.3em;
+}
+
+input{
+border-radius: 4px;
+padding: .4em .4em;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 11px;
+margin : 0.3em;
 }
