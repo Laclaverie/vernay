@@ -2,14 +2,53 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script src="../dist/vue.js"></script>
     </head>
     <body>
-        
+<h1> Activité 1_2 et 2_2</h1>
         <div id="app">
             {{ message }}
         </div>
-        
-        <script src="../src/index.js"></script>
-    </body>
+        <div id ="app2"> 
+        <p>{{message}} </p>
+        <input v-model="message">
+        <button v-on:click="reverseMessage" > Message  Retourné </button>
+        <button v-on:click= "counter=0"> Remettre compteur à 0</button>
+        <p> Vous avez cliqué {{counter}} fois sur Message Retourné, 2 suffisent pour avoir le message initial ! </p> 
+         </div>
+
+<h1> Activité 2_1 </h1> 
+
+<div id="app-7">
+<h3 > Affichage d'une liste avec vue js</h3>
+  <button v-on:click ="seen=1"> Voir la liste de courses </button>
+    <button v-on:click ="seen=0"> Cacher la liste de courses </button>
+  <ol v-if ="seen">
+    <todo-item
+      v-for="item in groceryList"
+      v-bind:todo="item"
+      v-bind:key="item.id"
+    ></todo-item>
+  </ol>
+</div>
+<div id = "tcheck">
+<h3 id ="titre_check"> Checkbox</h3>
+<input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+<label for="jack">Jack</label>
+<input type="checkbox" id="john" value="John" v-model="checkedNames">
+<label for="john">John</label>
+<input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+<label for="mike">Mike</label>
+<br>
+<span>Noms cochés : {{ checkedNames }}</span>
+</div>
+<div id= "formulaire">
+
+<br>
+
+
+</div>
+
+      <script src="main.js"></script>
+</body>
 </html>

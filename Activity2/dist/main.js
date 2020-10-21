@@ -1,5 +1,4 @@
 
-
 var app = new Vue({ 
     el: '#app',
     data: {
@@ -25,13 +24,26 @@ var app = new Vue({
   })
   
   var app7 = new Vue({
-    el: '#liste',
+    el: '#app-7',
     data: {
       groceryList: [
         { id: 0, text: 'Légumes' },
         { id: 1, text: 'Fromage' },
-        { id: 2, text: 'Tout ce que les humains sont supposés manger' },
-        {id : 3, texte :'Cest la fin de cette liste.'}
-      ]
+        { id: 2, text: 'Tout ce que les humains sont supposés manger' }
+      ],
+      seen : 0
+    },
+    methods:{
+      voir:function(){
+        if (this.seen==0){this.seen=1}
+        if (this.seen==1){this.seen=0}
+      }
+    }
+  })
+  
+  new Vue({
+    el: '#tcheck',
+    data: {
+      checkedNames: []
     }
   })
