@@ -14,8 +14,7 @@ font-family: 'Source Sans Pro';
 font-weight: 300;
 color: #5d5d5d;
 padding : 2em;
-background-image:url(images/tse.png) ;
-background-position: bottom;
+background-image: url(images/background_body.png);
 background-repeat: no-repeat;
 }
 
@@ -31,6 +30,8 @@ margin: 0 0 .5em 0;
     color: #252122;
     font-weight: 300;
     text-align: left;
+    background: scroll;
+    background-image:url(images/bois.jpg) ;
 }
 
 p {
@@ -64,3 +65,20 @@ display: inline-block;
 font-size: 11px;
 margin : 0.3em;
 }
+#titre_check {
+    position: relative;
+    padding-left: 5%;
+    }
+    
+    #titre_check:before {
+    content: url(images/check-min.png);
+    widows: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    display: block;
+    }
+#tcheck{
+background: scroll;
+background-image: url(images/background_checkbox.jpg);
+    }

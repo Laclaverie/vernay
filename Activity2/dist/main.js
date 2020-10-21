@@ -30,7 +30,14 @@ var app = new Vue({
         { id: 0, text: 'Légumes' },
         { id: 1, text: 'Fromage' },
         { id: 2, text: 'Tout ce que les humains sont supposés manger' }
-      ]
+      ],
+      seen : 0
+    },
+    methods:{
+      voir:function(){
+        if (this.seen==0){this.seen=1}
+        if (this.seen==1){this.seen=0}
+      }
     }
   })
   

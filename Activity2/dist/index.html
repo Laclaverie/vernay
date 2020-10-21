@@ -14,14 +14,16 @@
         <input v-model="message">
         <button v-on:click="reverseMessage" > Message  Retourné </button>
         <button v-on:click= "counter=0"> Remettre compteur à 0</button>
-        <p> Vous avez cliqué {{counter}} fois sur Message Retourné, 2 suffisent ! </p> 
+        <p> Vous avez cliqué {{counter}} fois sur Message Retourné, 2 suffisent pour avoir le message initial ! </p> 
          </div>
 
 <h1> Activité 2_1 </h1> 
 
 <div id="app-7">
-<h3> Affichage d'une liste avec vue js</h3>
-  <ol>
+<h3 > Affichage d'une liste avec vue js</h3>
+  <button v-on:click ="seen=1"> Voir la liste de courses </button>
+    <button v-on:click ="seen=0"> Cacher la liste de courses </button>
+  <ol v-if ="seen">
     <todo-item
       v-for="item in groceryList"
       v-bind:todo="item"
@@ -30,7 +32,7 @@
   </ol>
 </div>
 <div id = "tcheck">
-<h3> Checkbox</h3>
+<h3 id ="titre_check"> Checkbox</h3>
 <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
 <label for="jack">Jack</label>
 <input type="checkbox" id="john" value="John" v-model="checkedNames">
